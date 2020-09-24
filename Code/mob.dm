@@ -236,7 +236,7 @@
 /obj/proc/hide(h)
 	return
 
-/obj/item/weapon/grab/proc/throw()
+/obj/item/weapon/grab/proc/toss()
 
 	if(src.affecting)
 		src.affecting.density = 1
@@ -4059,7 +4059,7 @@
 		if (istype(src.w_uniform, /obj/item/weapon/clothing/under))
 
 
-			var/t1 = src.w_uniform.color
+			var/t1 = src.w_uniform.colour
 
 			if (!( t1 ))
 				t1 = src.icon_state
@@ -4919,7 +4919,7 @@
 			return
 		W.loc = src.loc
 		if (istype(W, /obj/item/weapon/grab))
-			W:throw()
+			W:toss()
 		else
 			W.dropped(src)
 		if (W)
