@@ -137,10 +137,10 @@ var
 
 	world_message = "Welcome to OpenSS13!"
 	savefile_ver = "4"
-	SS13_version = "1.0 \[Development Version] - 8/17/2008"
+	SS13_version = "1.1 \[Development Version] - 9/24/2020"
 	changes = {"<FONT color='blue'><H3>Version: [SS13_version]</H3><B>Changes from base version 1</B></FONT><BR>
 <HR>
-<p><B>This is a test version which hasn't been released yet, the reason being to test new bugfixes and/or features to see if they're all working without having broken anything else.
+<p><B>Made 513 compatible by fixing reserved var/proc name errors.
 </B></p>
 "}
 
