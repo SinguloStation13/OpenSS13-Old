@@ -5238,10 +5238,10 @@
 /mob/proc/make_flag()
 	set category = "Admin"
 
-	var/color = input("Please select a color", null, null, null) in list( "red", "blue", "green", "yellow", "black", "white", "neutral" )
+	var/colour = input("Please select a color", null, null, null) in list( "red", "blue", "green", "yellow", "black", "white", "neutral" )
 	var/obj/item/weapon/paper/flag/F = new /obj/item/weapon/paper/flag( src.loc )
-	F.icon_state = text("flag_[]", color)
-	if(config.logadmin) world.log << text("ADMIN: [] made a [] flag.", src.key,color)
+	F.icon_state = text("flag_[]", colour)
+	if(config.logadmin) world.log << text("ADMIN: [] made a [] flag.", src.key,colour)
 	return
 
 /mob/proc/restart()
