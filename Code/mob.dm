@@ -236,7 +236,7 @@
 /obj/proc/hide(h)
 	return
 
-/obj/item/weapon/grab/proc/throw()
+/obj/item/weapon/grab/proc/toss()
 
 	if(src.affecting)
 		src.affecting.density = 1
@@ -4059,7 +4059,7 @@
 		if (istype(src.w_uniform, /obj/item/weapon/clothing/under))
 
 
-			var/t1 = src.w_uniform.color
+			var/t1 = src.w_uniform.colour
 
 			if (!( t1 ))
 				t1 = src.icon_state
@@ -4919,7 +4919,7 @@
 			return
 		W.loc = src.loc
 		if (istype(W, /obj/item/weapon/grab))
-			W:throw()
+			W:toss()
 		else
 			W.dropped(src)
 		if (W)
@@ -5238,10 +5238,10 @@
 /mob/proc/make_flag()
 	set category = "Admin"
 
-	var/color = input("Please select a color", null, null, null) in list( "red", "blue", "green", "yellow", "black", "white", "neutral" )
+	var/colour = input("Please select a color", null, null, null) in list( "red", "blue", "green", "yellow", "black", "white", "neutral" )
 	var/obj/item/weapon/paper/flag/F = new /obj/item/weapon/paper/flag( src.loc )
-	F.icon_state = text("flag_[]", color)
-	if(config.logadmin) world.log << text("ADMIN: [] made a [] flag.", src.key,color)
+	F.icon_state = text("flag_[]", colour)
+	if(config.logadmin) world.log << text("ADMIN: [] made a [] flag.", src.key,colour)
 	return
 
 /mob/proc/restart()

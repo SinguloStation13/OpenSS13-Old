@@ -23,7 +23,7 @@ obj/machinery/atmoalter/canister
 	weight = 1.0E7
 
 	var
-		color = "blue"				// used to set icon_state
+		colour = "blue"				// used to set icon_state
 		health = 20.0				// health removed by attacks & fire
 		destroyed = null			// true if the canister has broken
 		filled = 1.0				//fractional fullness at spawn 0=empty, 1=full
@@ -48,10 +48,10 @@ obj/machinery/atmoalter/canister
 		src.overlays = 0
 
 		if (destroyed)
-			icon_state = "[color]-1"
+			icon_state = "[colour]-1"
 
 		else
-			icon_state = "[color]"
+			icon_state = "[colour]"
 			if(holding)
 				overlays += image('canister.dmi', "can-oT")
 
@@ -366,7 +366,7 @@ Pipe Valve Status: [ct]<BR>
 	poisoncanister
 		name = "Canister \[Plasma (Bio)\]"
 		icon_state = "orange"
-		color = "orange"
+		colour = "orange"
 
 		New()
 			..()
@@ -380,7 +380,7 @@ Pipe Valve Status: [ct]<BR>
 	oxygencanister
 		name = "Canister: \[O2\]"
 		icon_state = "blue"
-		color = "blue"
+		colour = "blue"
 
 		New()
 			..()
@@ -393,7 +393,7 @@ Pipe Valve Status: [ct]<BR>
 	anesthcanister
 		name = "Canister: \[N2O\]"
 		icon_state = "redws"
-		color = "redws"
+		colour = "redws"
 
 		New()
 			..()
@@ -406,7 +406,7 @@ Pipe Valve Status: [ct]<BR>
 	n2canister
 		name = "Canister: \[N2\]"
 		icon_state = "red"
-		color = "red"
+		colour = "red"
 
 		New()
 			..()
@@ -419,7 +419,7 @@ Pipe Valve Status: [ct]<BR>
 	co2canister
 		name = "Canister \[CO2\]"
 		icon_state = "black"
-		color = "black"
+		colour = "black"
 
 		New()
 			..()
@@ -432,7 +432,7 @@ Pipe Valve Status: [ct]<BR>
 	aircanister
 		name = "Canister \[Air\]"
 		icon_state = "grey"
-		color = "grey"
+		colour = "grey"
 
 		New()
 			..()
@@ -448,7 +448,7 @@ Pipe Valve Status: [ct]<BR>
 	airreservoir
 		name = "Main Atmosphere Reservoir"
 		icon_state = "white"
-		color = "white"
+		colour = "white"
 		anchored = 1
 		maximum = 1.3E9
 
