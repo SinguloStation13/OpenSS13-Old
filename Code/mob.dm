@@ -1952,8 +1952,8 @@
 /mob/human/proc/emote(act as text)
 
 	var/param = null
-	if (findtext(act, "-", 1, null))
-		var/t1 = findtext(act, "-", 1, null)
+	if (findtextEx(act, "-", 1, null))
+		var/t1 = findtextEx(act, "-", 1, null)
 		param = copytext(act, t1 + 1, length(act) + 1)
 		act = copytext(act, 1, t1)
 	var/muzzled = istype(src.wear_mask, /obj/item/weapon/clothing/mask/muzzle)
@@ -3030,6 +3030,7 @@
 	src.blind.screen_loc = "1,1 to 15,15"
 	src.flash.screen_loc = "1,1 to 15,15"
 	src.blind.layer = 0
+	src.blind.plane = -1
 	src.flash.layer = 17
 	src.client.screen.len = null
 	src.client.screen -= list( src.zone_sel, src.oxygen, src.i_select, src.m_select, src.toxin, src.internals, src.fire, src.hands, src.healths, src.pullin, src.blind, src.flash, src.rest, src.sleep, src.mach )
@@ -3114,6 +3115,7 @@
 	src.stat = 2
 	src.canmove = 0
 	src.blind.layer = 0
+	src.blind.plane = -1
 	src.lying = 1
 	src.rname = "[src.rname] (Dead)"
 	//src.icon_state = "dead"
@@ -3694,8 +3696,10 @@
 		src.screenOrBackupRemove(src.hud_used.vimpaired)
 		if ((src.blind && src.stat != 2))
 			if (src.blinded)
+				src.blind.plane = null
 				src.blind.layer = 18
 			else
+				src.blind.plane = -1
 				src.blind.layer = 0
 				if ((src.disabilities & 1 && !( istype(src.glasses, /obj/item/weapon/clothing/glasses/regular) )))
 					src.screenOrBackupRemove(src.hud_used.vimpaired)
@@ -4667,15 +4671,15 @@
 /mob/human/Topic(href, href_list)
 
 	if ((src == usr && !( src.start )))
-		if (findtext(href, "occ", 1, null))
-			if (findtext(href, "cancel", 1, null))
+		if (findtextEx(href, "occ", 1, null))
+			if (findtextEx(href, "cancel", 1, null))
 				usr << browse(null, text("window=\ref[]occupation", src))
 				return
-			if (!( findtext(href, "job", 1, null) ))
+			if (!( findtextEx(href, "job", 1, null) ))
 				src.SetChoices(text2num(href_list["occ"]))
 			else
 				src.SetJob(arglist(list("occ" = text2num(href_list["occ"]), "job" = href_list["job"])))
-		else if (findtext(href, "rname", 1, null))
+		else if (findtextEx(href, "rname", 1, null))
 			var/t1 = href_list["rname"]
 			if (t1 == "input")
 				t1 = input("Please select a name:", "Character Generation", null, null)  as text
@@ -4684,62 +4688,62 @@
 					t1 = copytext(t1, 1, 26)
 				t1 = dd_replacetext(t1, ">", "'")
 				src.rname = t1
-		else if (findtext(href, "age", 1, null))
+		else if (findtextEx(href, "age", 1, null))
 			var/t1 = href_list["age"]
 			if (t1 == "input")
 				t1 = input("Please select type in age: 20-45", "Character Generation", null, null)  as num
 			if ((!( src.start ) && t1))
 				src.age = max(min(round(text2num(t1)), 45), 20)
-		else if (findtext(href, "b_type", 1, null))
+		else if (findtextEx(href, "b_type", 1, null))
 			var/t1 = href_list["b_type"]
 			if (t1 == "input")
 				t1 = input("Please select a blood type:", "Character Generation", null, null)  as null|anything in list( "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" )
 			if ((!( src.start ) && t1))
 				src.b_type = t1
-		else if (findtext(href, "nr_hair", 1, null))
+		else if (findtextEx(href, "nr_hair", 1, null))
 			var/t1 = href_list["nr_hair"]
 			if (t1 == "input")
 				t1 = input("Please select red hair component: 1-255", "Character Generation", null, null)  as text
 			if ((!( src.start ) && t1))
 				src.nr_hair = max(min(round(text2num(t1)), 255), 1)
-		else if (findtext(href, "ng_hair", 1, null))
+		else if (findtextEx(href, "ng_hair", 1, null))
 			var/t1 = href_list["ng_hair"]
 			if (t1 == "input")
 				t1 = input("Please select green hair component: 1-255", "Character Generation", null, null)  as text
 			if ((!( src.start ) && t1))
 				src.ng_hair = max(min(round(text2num(t1)), 255), 1)
-		else if (findtext(href, "nb_hair", 1, null))
+		else if (findtextEx(href, "nb_hair", 1, null))
 			var/t1 = href_list["nb_hair"]
 			if (t1 == "input")
 				t1 = input("Please select blue hair component: 1-255", "Character Generation", null, null)  as text
 			if ((!( src.start ) && t1))
 				src.nb_hair = max(min(round(text2num(t1)), 255), 1)
-		else if (findtext(href, "r_eyes", 1, null))
+		else if (findtextEx(href, "r_eyes", 1, null))
 			var/t1 = href_list["r_eyes"]
 			if (t1 == "input")
 				t1 = input("Please select red eyes component: 1-255", "Character Generation", null, null)  as text
 			if ((!( src.start ) && t1))
 				src.r_eyes = max(min(round(text2num(t1)), 255), 1)
-		else if (findtext(href, "ns_tone", 1, null))
+		else if (findtextEx(href, "ns_tone", 1, null))
 			var/t1 = href_list["ns_tone"]
 			if (t1 == "input")
 				t1 = input("Please select skin tone level: 1-220 (1=albino,35=caucasian, 150=black220='very' black)", "Character Generation", null, null)  as text
 			if ((!( src.start ) && t1))
 				src.ns_tone = max(min(round(text2num(t1)), 220), 1)
 				src.ns_tone =  -src.ns_tone + 35
-		else if (findtext(href, "g_eyes", 1, null))
+		else if (findtextEx(href, "g_eyes", 1, null))
 			var/t1 = href_list["g_eyes"]
 			if (t1 == "input")
 				t1 = input("Please select green eyes component: 1-255", "Character Generation", null, null)  as text
 			if ((!( src.start ) && t1))
 				src.g_eyes = max(min(round(text2num(t1)), 255), 1)
-		else if (findtext(href, "b_eyes", 1, null))
+		else if (findtextEx(href, "b_eyes", 1, null))
 			var/t1 = href_list["b_eyes"]
 			if (t1 == "input")
 				t1 = input("Please select blue eyes component: 1-255", "Character Generation", null, null)  as text
 			if ((!( src.start ) && t1))
 				src.b_eyes = max(min(round(text2num(t1)), 255), 1)
-		else if (findtext(href, "h_style", 1, null))
+		else if (findtextEx(href, "h_style", 1, null))
 			var/t1 = href_list["h_style"]
 			if (t1 == "input")
 				t1 = input("Please select hair style", "Character Generation", null, null)  as null|anything in list( "Cut Hair", "Short Hair (M)", "Long Hair (F)", "Bald" )
@@ -4754,30 +4758,30 @@
 						src.h_style_r = "hair_c"
 					else
 						src.h_style_r = "bald"
-		else if (findtext(href, "gender", 1, null))
+		else if (findtextEx(href, "gender", 1, null))
 			if (src.gender == "male")
 				src.gender = "female"
 			else
 				src.gender = "male"
 			src.stand_icon = new /icon( 'human.dmi', text("[]", src.gender) )
 			src.lying_icon = new /icon( 'human.dmi', text("[]-d", src.gender) )
-		else if (findtext(href, "n_gl", 1, null))
+		else if (findtextEx(href, "n_gl", 1, null))
 			src.need_gl = !( src.need_gl )
-		else if (findtext(href, "b_ep", 1, null))
+		else if (findtextEx(href, "b_ep", 1, null))
 			src.be_epil = !( src.be_epil )
-		else if (findtext(href, "b_tur", 1, null))
+		else if (findtextEx(href, "b_tur", 1, null))
 			src.be_tur = !( src.be_tur )
-		else if (findtext(href, "b_co", 1, null))
+		else if (findtextEx(href, "b_co", 1, null))
 			src.be_cough = !( src.be_cough )
-		else if (findtext(href, "b_stut", 1, null))
+		else if (findtextEx(href, "b_stut", 1, null))
 			src.be_stut = !( src.be_stut )
-		else if (findtext(href, "save", 1, null))
+		else if (findtextEx(href, "save", 1, null))
 			src.savefile_write()
-		else if (findtext(href, "load", 1, null))
+		else if (findtextEx(href, "load", 1, null))
 			if (!src.savefile_load(0))
 				alert("You do not have a savefile.")
 
-		else if (findtext(href, "reset_all", 1, null))
+		else if (findtextEx(href, "reset_all", 1, null))
 
 			rname = key
 			gender = MALE
@@ -6297,6 +6301,7 @@
 	src.blind.screen_loc = "1,1 to 15,15"
 	src.flash.screen_loc = "1,1 to 15,15"
 	src.blind.layer = 0
+	src.blind.plane = -1
 	src.flash.layer = 17
 	src.sleep.layer = 20
 	src.rest.layer = 20
@@ -6422,6 +6427,7 @@
 	src.canmove = 0
 	if (src.blind)
 		src.blind.layer = 0
+		src.blind.plane = -1
 	src.lying = 1
 	src.rname = "[src.rname] (Dead)"
 	//src.icon_state = "dead"
@@ -6804,9 +6810,11 @@
 		src.screenOrBackupRemove(src.hud_used.vimpaired)
 		if ((src.blind && src.stat != 2))
 			if (src.blinded)
+				src.blind.plane = null
 				src.blind.layer = 18
 			else
 				src.blind.layer = 0
+				src.blind.plane = -1
 				if (src.eye_blurry)
 					src.screenOrBackupRemove(src.hud_used.blurry)
 					src.screenOrBackupAdd(src.hud_used.blurry)
@@ -6888,8 +6896,8 @@
 /mob/monkey/proc/emote(act)
 
 	var/param = null
-	if (findtext(act, "-", 1, null))
-		var/t1 = findtext(act, "-", 1, null)
+	if (findtextEx(act, "-", 1, null))
+		var/t1 = findtextEx(act, "-", 1, null)
 		param = copytext(act, t1 + 1, length(act) + 1)
 		act = copytext(act, 1, t1)
 	var/muzzled = istype(src.wear_mask, /obj/item/weapon/clothing/mask/muzzle)

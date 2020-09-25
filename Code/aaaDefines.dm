@@ -144,16 +144,16 @@
 
 /proc/cleanstring(var/t)
 
-	var/index = findtext(t, "\n")
+	var/index = findtextEx(t, "\n")
 	while(index)
 		t = copytext(t, 1, index) + "#" + copytext(t, index+1)
-		index = findtext(t, "\n")
+		index = findtextEx(t, "\n")
 
 
-	index = findtext(t, "\t")
+	index = findtextEx(t, "\t")
 	while(index)
 		t = copytext(t, 1, index) + "#" + copytext(t, index+1)
-		index = findtext(t, "\t")
+		index = findtextEx(t, "\t")
 
 
 	return t
