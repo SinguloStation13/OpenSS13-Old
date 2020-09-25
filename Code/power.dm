@@ -49,7 +49,7 @@
 
 	// ensure d1 & d2 reflect the icon_state for entering and exiting cable
 
-	var/dash = findtext(icon_state, "-")
+	var/dash = findtextEx(icon_state, "-")
 
 	d1 = text2num( copytext( icon_state, 1, dash ) )
 
@@ -153,7 +153,7 @@ atom/proc/electrocute(mob/user, prb, netnum)
 				prot = G.elec_protect
 		else if (istype(user, /mob/ai))
 			return 0
-		
+
 		if(prot == 10)		// elec insulted gloves protect completely
 			return 0
 
@@ -169,7 +169,7 @@ atom/proc/electrocute(mob/user, prb, netnum)
 
 		if (istype(user, /mob/drone))
 			user.client_mob() << "\red <B>The drone has been electrocuted!</B>"
-			user:releaseControl(0)	
+			user:releaseControl(0)
 		else
 			user << "\red <B>You feel a powerful shock course through your body!</B>"
 		sleep(1)
