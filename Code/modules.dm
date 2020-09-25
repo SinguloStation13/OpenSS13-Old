@@ -53,7 +53,7 @@ var/list/modules = list(			// global associative list
 	var/pos = 1
 
 	while(1)
-		pos = findText(modtext, ",", pos, 0)
+		pos = findtextEx(modtext, ",", pos, 0)
 		if(!pos)
 			break
 		else
@@ -100,7 +100,3 @@ var/list/modules = list(			// global associative list
 	name = "power cell charger module"
 	icon_state = "power_mod"
 	desc = "Charging circuits for power cells."
-
-
-
-
