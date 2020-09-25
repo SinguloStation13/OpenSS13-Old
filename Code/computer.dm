@@ -103,7 +103,7 @@
 /obj/datacore/proc/manifest()
 
 	for(var/mob/human/H in world)
-		if ((H.start && !( findtext(H.rname, "Syndicate ", 1, null) )))
+		if ((H.start && !( findtextEx(H.rname, "Syndicate ", 1, null) )))
 			var/datum/data/record/G = new /datum/data/record(  )
 			var/datum/data/record/M = new /datum/data/record(  )
 			var/datum/data/record/S = new /datum/data/record(  )
