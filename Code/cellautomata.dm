@@ -1037,7 +1037,7 @@
 		if (t)
 			if (copytext(t, 1, 2) == ";")
 				continue //goto(64)
-			var/t1 = findtext(t, " - ", 1, null)
+			var/t1 = findtextEx(t, " - ", 1, null)
 			if (t1)
 				var/m_key = copytext(t, 1, t1)
 				var/a_lev = text("[]", copytext(t, t1 + 3, length(t) + 1))
@@ -1082,7 +1082,7 @@
 			if(t)
 				if(copytext(t,1,2) == "#")		// comment marker
 					continue
-				var/t1 = findtext(t," ")
+				var/t1 = findtextEx(t," ")
 				var/cfgvar
 				var/cfgval = null
 
@@ -1409,7 +1409,7 @@
 		src.objective = "Success"
 		world << "<B>The Syndicate Operatives have destroyed Space Station 13!</B>"
 		for(var/mob/human/H in world)
-			if ((H.cliented() && findtext(H.rname, "Syndicate ", 1, null)))
+			if ((H.cliented() && findtextEx(H.rname, "Syndicate ", 1, null)))
 				if (H.stat != 2)
 					world << text("<B>[] was []</B>", H.key, H.rname)
 				else
@@ -1630,7 +1630,7 @@
 				if (disk_on_shuttle)
 					world << "<FONT size = 3><B>The Research Staff has stopped the Syndicate Operatives!</B></FONT>"
 					for(var/mob/human/H in world)
-						if ((H.cliented() && !( findtext(H.rname, "Syndicate ", 1, null) )))
+						if ((H.cliented() && !( findtextEx(H.rname, "Syndicate ", 1, null) )))
 							if (H.stat != 2)
 								world << text("<B>[] was []</B>", H.key, H.rname)
 							else
