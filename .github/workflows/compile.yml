@@ -52,7 +52,6 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          curl https://raw.githubusercontent.com/yogstation13/Yogstation/master/.github/sources.list | sudo tee /etc/apt/sources.list
           sudo dpkg --add-architecture i386
           sudo apt-get update
           sudo apt install libstdc++6:i386
