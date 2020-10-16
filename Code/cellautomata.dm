@@ -1175,6 +1175,11 @@
 			H.memory += text("<B>Secret Base Nuke Code</B>: []<BR>", nuke_code)
 	sleep(50)
 
+	if("test-run" in params)
+		world.log << "Shutting down test run!"
+		sleep(0)	//yes, 0, this'll let Reboot finish and prevent byond memes
+		del(src)	//shut it down
+
 	plmaster = new /obj/overlay(  )
 	plmaster.icon = 'plasma.dmi'
 	plmaster.icon_state = "onturf"
