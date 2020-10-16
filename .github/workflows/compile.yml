@@ -32,7 +32,6 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          tools/ci/install_build_tools.sh
           tools/ci/install_spaceman_dmm.sh dreamchecker
 
       - name: Run Linter
@@ -51,12 +50,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-#      - name: Install Dependencies
-#        run: |
-#          curl https://raw.githubusercontent.com/yogstation13/Yogstation/master/.github/sources.list | sudo tee /etc/apt/sources.list
-#          sudo dpkg --add-architecture i386
-#          sudo apt-get update
-#          sudo apt install libstdc++6:i386
+      - name: Install Dependencies
+        run: |
+          curl https://raw.githubusercontent.com/yogstation13/Yogstation/master/.github/sources.list | sudo tee /etc/apt/sources.list
+          sudo dpkg --add-architecture i386
+          sudo apt-get update
+          sudo apt install libstdc++6:i386
 
       - name: Cache BYOND
         uses: actions/cache@v1
@@ -77,7 +76,6 @@ jobs:
 
       - name: Compile
         run: |
-          tools/ci/template_dm_generator.py
           tools/ci/dm.sh spacestation13.dme
 
   test:
@@ -113,7 +111,6 @@ jobs:
 
       - name: Compile
         run: |
-          tools/ci/template_dm_generator.py
           tools/ci/dm.sh spacestation13.dme
 
       - name: Prepare Artifacts
