@@ -24,7 +24,7 @@ AUTO_FILE_DIR: ON
 #define FILE_DIR "Code/Machinery/Power"
 #define FILE_DIR "Code/mob"
 #define FILE_DIR "Code/Object"
-#define FILE_DIR "Icons"
+#defube FILE_DIR "icons"
 #define FILE_DIR "Interface"
 // END_FILE_DIR
 
