@@ -19,7 +19,7 @@
 obj/machinery/compressor
 	name = "compressor"
 	desc = "The compressor stage of a gas turbine generator."
-	icon = 'pipes.dmi'
+	icon = 'icons/pipes.dmi'
 	icon_state = "compressor"
 	anchored = 1
 	density = 1
@@ -79,13 +79,13 @@ obj/machinery/compressor
 
 
 		if(rpm>50000)
-			overlays += image('pipes.dmi', "comp-o4", FLY_LAYER)
+			overlays += image('icons/pipes.dmi', "comp-o4", FLY_LAYER)
 		else if(rpm>10000)
-			overlays += image('pipes.dmi', "comp-o3", FLY_LAYER)
+			overlays += image('icons/pipes.dmi', "comp-o3", FLY_LAYER)
 		else if(rpm>2000)
-			overlays += image('pipes.dmi', "comp-o2", FLY_LAYER)
+			overlays += image('icons/pipes.dmi', "comp-o2", FLY_LAYER)
 		if(rpm>500)
-			overlays += image('pipes.dmi', "comp-o1", FLY_LAYER)
+			overlays += image('icons/pipes.dmi', "comp-o1", FLY_LAYER)
 
 
 /*
@@ -100,7 +100,7 @@ obj/machinery/compressor
 obj/machinery/power/turbine
 	name = "gas turbine generator"
 	desc = "A gas turbine used to for backup power generation."
-	icon = 'pipes.dmi'
+	icon = 'icons/pipes.dmi'
 	icon_state = "turbine"
 	anchored = 1
 	density = 1
@@ -157,7 +157,7 @@ obj/machinery/power/turbine
 			outturf.firelevel = outturf.poison
 
 		if(lastgen > 100)
-			overlays += image('pipes.dmi', "turb-o", FLY_LAYER)
+			overlays += image('icons/pipes.dmi', "turb-o", FLY_LAYER)
 
 
 		src.updateDialog()
@@ -171,7 +171,7 @@ obj/machinery/power/turbine
 		if(stat & (BROKEN | NOPOWER)) return
 
 		interact(user)
-		
+
 	// Attack hand, do user interaction
 
 	attack_hand(mob/user)
@@ -222,7 +222,7 @@ obj/machinery/power/turbine
 		if (usr.stat || usr.restrained() )
 			return
 		if ((!( istype(usr, /mob/human) ) && (!( ticker ) || (ticker && ticker.mode != "monkey"))))
-			if (!istype(usr, /mob/ai))		
+			if (!istype(usr, /mob/ai))
 				if (!istype(usr, /mob/drone))
 					usr.client_mob() << "\red You don't have the dexterity to do this!"
 					return

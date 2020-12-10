@@ -8,7 +8,7 @@
 
 obj/machinery/computer/med_data
 	name = "Medical Records"
-	icon = 'weap_sat.dmi'
+	icon = 'icons/weap_sat.dmi'
 	icon_state = "computer"
 	var
 		obj/item/weapon/card/id/scan = null		// ID card inserted in the computer

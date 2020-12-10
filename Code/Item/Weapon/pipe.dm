@@ -7,7 +7,7 @@
 
 obj/item/weapon/pipe
 	name = "pipe"
-	icon = 'pipe-item.dmi'
+	icon = 'icons/pipe-item.dmi'
 	icon_state = "straight"
 	flags = TABLEPASS|DRIVABLE|FPRINT
 	w_class = 3

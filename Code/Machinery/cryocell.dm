@@ -8,7 +8,7 @@
 
 obj/machinery/cryo_cell
 	name = "cryo cell"
-	icon = 'Cryogenic2.dmi'
+	icon = 'icons/Cryogenic2.dmi'
 	icon_state = "celltop"
 	density = 1
 	anchored = 1
@@ -35,13 +35,13 @@ obj/machinery/cryo_cell
 		..()
 		src.layer = 5
 		O1 = new /obj/overlay(  )
-		O1.icon = 'Cryogenic2.dmi'
+		O1.icon = 'icons/Cryogenic2.dmi'
 		O1.icon_state = "cellconsole"
 		O1.pixel_y = -32.0
 		O1.layer = 4
 
 		O2 = new /obj/overlay(  )
-		O2.icon = 'Cryogenic2.dmi'
+		O2.icon = 'icons/Cryogenic2.dmi'
 		O2.icon_state = "cellbottom"
 		O2.pixel_y = -32.0
 

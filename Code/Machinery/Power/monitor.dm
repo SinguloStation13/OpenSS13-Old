@@ -6,7 +6,7 @@
 
 obj/machinery/power/monitor
 	name = "power monitoring computer"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "power_computer"
 	density = 1
 	anchored = 1
@@ -16,7 +16,7 @@ obj/machinery/power/monitor
 		allowed = "Systems"				// ID card job assignment needed to enable remote control
 
 	//Attack by AI, show report window
-	
+
 	attack_ai(mob/user)
 		add_fingerprint(user)
 
@@ -56,7 +56,7 @@ obj/machinery/power/monitor
 	proc/interact(mob/user)
 
 		if ( (get_dist(src, user) > 1 ) || (stat & (BROKEN|NOPOWER)) )
-			if (!istype(user, /mob/ai))	
+			if (!istype(user, /mob/ai))
 				user.machine = null
 				user.client_mob() << browse(null, "window=powcomp")
 				return

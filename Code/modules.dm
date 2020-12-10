@@ -67,7 +67,7 @@ var/list/modules = list(			// global associative list
 
 
 /obj/item/weapon/module
-	icon = 'module.dmi'
+	icon = 'icons/module.dmi'
 	icon_state = "std_module"
 	w_class = 2.0
 	s_istate = "electronic"

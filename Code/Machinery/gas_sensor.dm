@@ -6,7 +6,7 @@
 
 obj/machinery/gas_sensor
 	name = "gas sensor"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "gsensor"
 	desc = "A remote sensor for atmospheric gas composition."
 	anchored = 1

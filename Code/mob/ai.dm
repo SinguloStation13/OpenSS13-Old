@@ -2,7 +2,7 @@
 
 /mob/ai
 	name = "AI"
-	icon = 'power.dmi'
+	icon = 'icons/power.dmi'
 	icon_state = "teg"
 	gender = MALE
 	var/network = "SS13"
@@ -826,17 +826,17 @@
 
 	switch_hud()
 		if (src.hud_used == main_hud)
-			src.fire.icon = 'screen.dmi'
-			src.healths.icon = 'screen.dmi'
-			src.toxin.icon = 'screen.dmi'
+			src.fire.icon = 'icons/screen.dmi'
+			src.healths.icon = 'icons/screen.dmi'
+			src.toxin.icon = 'icons/screen.dmi'
 			src.favorite_hud = 1
 			src.hud_used = main_hud
 		else
 			src.favorite_hud = 0
 			src.hud_used = main_hud
-			src.fire.icon = 'screen1.dmi'
-			src.healths.icon = 'screen1.dmi'
-			src.toxin.icon = 'screen1.dmi'
+			src.fire.icon = 'icons/screen1.dmi'
+			src.healths.icon = 'icons/screen1.dmi'
+			src.toxin.icon = 'icons/screen1.dmi'
 		return
 
 	//block the take-off/put-on dialog

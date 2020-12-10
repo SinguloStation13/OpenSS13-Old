@@ -6,7 +6,7 @@
 
 obj/machinery/computer/shuttle
 	name = "shuttle"
-	icon = 'shuttle.dmi'
+	icon = 'icons/shuttle.dmi'
 	icon_state = "shuttlecom"
 
 	var

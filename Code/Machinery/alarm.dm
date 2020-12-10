@@ -5,7 +5,7 @@
 
 obj/machinery/alarm
 	name = "alarm"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "alarm:0"
 	anchored = 1.0
 	layer = 3.1
@@ -114,7 +114,7 @@ obj/machinery/alarm
 
 obj/machinery/alarm/indicator
 	name = "indicator"
-	icon = 'airtunnel.dmi'
+	icon = 'icons/airtunnel.dmi'
 	icon_state = "indicator"
 
 

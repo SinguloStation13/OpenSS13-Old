@@ -24,9 +24,9 @@
 	if(charge < 0.01)
 		return
 	else if(charge/maxcharge >=0.995)
-		overlays += image('power.dmi', "cell-o2")
+		overlays += image('icons/power.dmi', "cell-o2")
 	else
-		overlays += image('power.dmi', "cell-o1")
+		overlays += image('icons/power.dmi', "cell-o1")
 
 /obj/item/weapon/cell/proc/percent()		// return % charge of cell
 	return 100.0*charge/maxcharge

@@ -384,12 +384,12 @@ obj/machinery/atmoalter/siphs
 
 	fullairsiphon
 		name = "Air siphon"
-		icon = 'turfs.dmi'
+		icon = 'icons/turfs.dmi'
 		icon_state = "siphon:0"
 
 		air_vent
 			name = "Air regulator"
-			icon = 'aircontrol.dmi'
+			icon = 'icons/aircontrol.dmi'
 			icon_state = "vent2"
 			t_status = 4				// air regulator vents start in automatic mode
 			alterable = 0				// with interface locked
@@ -397,7 +397,7 @@ obj/machinery/atmoalter/siphs
 
 		port
 			name = "Portable Siphon"
-			icon = 'stationobjs.dmi'
+			icon = 'icons/stationobjs.dmi'
 			flags = FPRINT|DRIVABLE
 			anchored = 0
 
@@ -479,12 +479,12 @@ obj/machinery/atmoalter/siphs
 
 	scrubbers
 		name = "scrubbers"
-		icon = 'turfs2.dmi'
+		icon = 'icons/turfs2.dmi'
 		icon_state = "siphon:0"
 
 		air_filter
 			name = "air filter"
-			icon = 'aircontrol.dmi'
+			icon = 'icons/aircontrol.dmi'
 			icon_state = "vent2"
 			t_status = 4			// air filter vents start in automatic mode
 			alterable = 0			// with interface locked
@@ -492,7 +492,7 @@ obj/machinery/atmoalter/siphs
 
 		port
 			name = "Portable Siphon"
-			icon = 'stationobjs.dmi'
+			icon = 'icons/stationobjs.dmi'
 			icon_state = "scrubber:0"
 			flags = FPRINT|DRIVABLE
 			anchored = 0.0

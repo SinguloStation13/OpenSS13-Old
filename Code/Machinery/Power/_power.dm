@@ -10,7 +10,7 @@
 
 obj/machinery/power
 	name = null
-	icon = 'power.dmi'
+	icon = 'icons/power.dmi'
 	anchored = 1.0
 
 	var

@@ -10,7 +10,7 @@
 
 obj/machinery/pod
 	name = "Escape Pod"
-	icon = 'escapepod.dmi'
+	icon = 'icons/escapepod.dmi'
 	icon_state = "pod"
 	density = 1
 	flags = FPRINT|DRIVABLE

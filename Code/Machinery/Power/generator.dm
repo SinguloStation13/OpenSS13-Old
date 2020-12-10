@@ -50,9 +50,9 @@ obj/machinery/power/generator
 			overlays = null
 
 			if(lastgenlev != 0)
-				overlays += image('power.dmi', "teg-op[lastgenlev]")
+				overlays += image('icons/power.dmi', "teg-op[lastgenlev]")
 
-			overlays += image('power.dmi', "teg-oc[c1on][c2on]")
+			overlays += image('icons/power.dmi', "teg-oc[c1on][c2on]")
 
 
 	// Generate power, depending on the gas amounts and temperatures in the circulators
@@ -113,12 +113,12 @@ obj/machinery/power/generator
 
 	// Attack with hand, open interaction window
 
-	
+
 	attack_ai(mob/user)
 		if(stat & (BROKEN|NOPOWER)) return
 
 		interact(user)
-		
+
 	attack_hand(mob/user)
 
 		add_fingerprint(user)
@@ -170,8 +170,8 @@ obj/machinery/power/generator
 		if (usr.stat || usr.restrained() )
 			return
 		if ((!( istype(usr, /mob/human) ) && (!( ticker ) || (ticker && ticker.mode != "monkey"))))
-			if (!istype(usr, /mob/ai))	
-				if (!istype(usr, /mob/drone))			
+			if (!istype(usr, /mob/ai))
+				if (!istype(usr, /mob/drone))
 					usr.client_mob() << "\red You don't have the dexterity to do this!"
 					return
 

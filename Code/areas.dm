@@ -2,6 +2,8 @@
 	var/fire = null
 	level = null
 	name = "area"
+	icon = 'icons/areas.dmi'
+	icon_state = "none"
 	mouse_opacity = 0
 	var/lightswitch = 1
 
@@ -42,29 +44,36 @@
 
 /area/engine
 	name = "engine"
+	icon_state = "engine"
 /area/engine_access
 	name = "engine access"
+	icon_state = "engine"
 /area/north_solar
 	name = "north solar"
 /area/escapezone
 	name = "escape zone"
 /area/hallways
 	name = "hallway"
+	icon_state = "hallway"
 /area/hallways/centralhall
 	name = "central hall"
+	icon_state = "hallwaycentral"
 /area/hallways/eastairlock
 	name = "east airlock"
+	icon_state = "airlock"
 /area/hallways/labaccess
 	name = "lab access"
+	icon_state = "lab"
 /area/hallways/loungehall
 	name = "lounge hall"
 /area/lounge
 	name = "lounge"
 /area/medical
 	name = "medical bay"
-/area/medicalresearch
+	icon_state = "medical"
+/area/medical/medicalresearch
 	name = "medical research"
-/area/medicalstorage
+/area/medical/medicalstorage
 	name = "medical storage"
 /area/oxygen_storage
 	name = "gas storage"
@@ -76,6 +85,7 @@
 	name = "shuttle"
 /area/shuttle_airlock
 	name = "shuttle airlock"
+	icon_state = "airlock"
 /area/shuttle_prison
 	name = "prison shuttle"
 	requires_power = 0
@@ -91,13 +101,16 @@
 	name = "start area"
 /area/supply_station
 	name = "supply station"
-/area/testlab1
+/area/lab
+	name = "lab"
+	icon_state = "lab"
+/area/lab/testlab1
 	name = "testlab1"
-/area/testlab2
+/area/lab/testlab2
 	name = "testlab2"
-/area/testlab3
+/area/lab/testlab3
 	name = "testlab3"
-/area/testlab4
+/area/lab/testlab4
 	name = "testlab4"
 /area/aux_engine
 	name = "aux. engine"
@@ -105,7 +118,7 @@
 	name = "tool storage"
 /area/tech_storage
 	name = "technical storage"
-/area/toxinlab
+/area/lab/toxinlab
 	name = "toxin lab"
 /area/vehicles
 	requires_power = 0
@@ -220,7 +233,7 @@
 /area/New()
 
 	..()
-	src.icon = 'alert.dmi'
+	src.icon = 'icons/alert.dmi'
 	src.layer = 10
 
 	if(!requires_power)

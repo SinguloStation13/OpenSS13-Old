@@ -555,7 +555,7 @@
 		spawn( 0 )
 			var/t = src.icon_state
 			src.icon_state = ""
-			src.icon = 'b_items.dmi'
+			src.icon = 'icons/b_items.dmi'
 			flick(text("[]", t), src)
 			spawn( 14 )
 				del(src)
@@ -2672,7 +2672,7 @@
 	spawn( 0 )
 		var/t = src.icon_state
 		src.icon_state = ""
-		src.icon = 'b_items.dmi'
+		src.icon = 'icons/b_items.dmi'
 		flick(text("[]", t), src)
 		spawn( 14 )
 			del(src)

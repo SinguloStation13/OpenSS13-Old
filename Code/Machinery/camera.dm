@@ -7,7 +7,7 @@
 
 obj/machinery/camera
 	name = "Security Camera"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "camera"
 	anchored = 1
 	var

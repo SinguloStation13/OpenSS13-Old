@@ -8,7 +8,7 @@
 
 obj/machinery/atmoalter/canister
 	name = "canister"
-	icon = 'canister.dmi'
+	icon = 'icons/canister.dmi'
 	density = 1
 
 	// from atmoalter
@@ -53,16 +53,16 @@ obj/machinery/atmoalter/canister
 		else
 			icon_state = "[colour]"
 			if(holding)
-				overlays += image('canister.dmi', "can-oT")
+				overlays += image('icons/canister.dmi', "can-oT")
 
 			if (air_in < 10)
-				overlays += image('canister.dmi', "can-o0")
+				overlays += image('icons/canister.dmi', "can-o0")
 			else if (air_in < (src.gas.maximum * 0.2))
-				overlays += image('canister.dmi', "can-o1")
+				overlays += image('icons/canister.dmi', "can-o1")
 			else if (air_in < (src.maximum * 0.6))
-				overlays += image('canister.dmi', "can-o2")
+				overlays += image('icons/canister.dmi', "can-o2")
 			else
-				overlays += image('canister.dmi', "can-o3")
+				overlays += image('icons/canister.dmi', "can-o3")
 		return
 
 

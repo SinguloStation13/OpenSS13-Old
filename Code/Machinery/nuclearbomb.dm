@@ -12,7 +12,7 @@
 obj/machinery/nuclearbomb
 	desc = "Uh oh."
 	name = "Nuclear Fission Explosive"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "nuclearbomb0"
 	density = 1
 	flags = FPRINT|DRIVABLE

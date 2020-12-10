@@ -6,7 +6,7 @@
 
 obj/machinery/computer/communications
 	name = "communications"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "comm_computer"
 
 
@@ -33,4 +33,4 @@ obj/machinery/computer/communications
 		src.add_fingerprint(usr)
 		if(stat & NOPOWER) return
 		cancel_call_proc(usr)
-		
+

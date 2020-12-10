@@ -8,7 +8,7 @@
 
 obj/machinery/inlet
 	name = "inlet"
-	icon = 'pipes.dmi'
+	icon = 'icons/pipes.dmi'
 	icon_state = "inlet"
 	desc = "A gas pipe inlet."
 	anchored = 1
@@ -300,7 +300,7 @@ obj/machinery/inlet
 
 obj/machinery/inletfiltered
 	name = "Atmospheric Preservation Inlet"
-	icon = 'pipes.dmi'
+	icon = 'icons/pipes.dmi'
 	icon_state = "inlet"
 	desc = "A gas pipe inlet, fitted with a filter."
 	anchored = 1

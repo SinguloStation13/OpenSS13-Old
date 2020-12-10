@@ -1,14 +1,14 @@
 /obj/portal
 	anchored = 1.0
 	density = 1
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "portal"
 	name = "portal"
 	var/obj/target = null
-	
+
 	New()
 		spawn(300) del(src)
-	
+
 	Bumped(atom/movable/M)
 		spawn(0) src.teleport(M)
 
@@ -43,4 +43,4 @@
 				M.loc = null
 			else
 				M.loc = locate(tx, ty, src.target.z)
-				
+

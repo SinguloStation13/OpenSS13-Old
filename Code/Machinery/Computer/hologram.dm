@@ -16,7 +16,7 @@
 
 obj/machinery/computer/hologram_comp
 	name = "Hologram Computer"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "holo_console0"
 
 	var
@@ -51,15 +51,15 @@ obj/machinery/computer/hologram_comp
 	// Set the projector to use the resulting icon
 
 	proc/render()
-		var/icon/I = new /icon( 'human.dmi', "male" )
+		var/icon/I = new /icon( 'icons/human.dmi', "male" )
 		if (src.lumens >= 0)
 			I.Blend(rgb(src.lumens, src.lumens, src.lumens), 0)
 		else
 			I.Blend(rgb(- src.lumens,  -src.lumens,  -src.lumens), 1)
-		I.Blend(new /icon( 'human.dmi', "mouth" ), 3)
-		var/icon/U = new /icon( 'human.dmi', "diaper" )
+		I.Blend(new /icon( 'icons/human.dmi', "mouth" ), 3)
+		var/icon/U = new /icon( 'icons/human.dmi', "diaper" )
 		U.Blend(U, 3)
-		U = new /icon( 'mob.dmi', "hair_a" )
+		U = new /icon( 'icons/mob.dmi', "hair_a" )
 		U.Blend(rgb(src.h_r, src.h_g, src.h_b), 0)
 		I.Blend(U, 3)
 		src.projector.projection.icon = I
@@ -100,7 +100,7 @@ Blue (0-255): <A href='?src=\ref[src];h_b=-300'>\[0\]</A> <A href='?src=\ref[src
 					del(src.projector.projection)
 				else											// create a new projection
 					src.projector.projection = new /obj/projection( src.projector.loc )
-					src.projector.projection.icon = 'human.dmi'
+					src.projector.projection.icon = 'icons/human.dmi'
 					src.projector.projection.icon_state = "male"
 					src.projector.icon_state = "hologram1"
 					src.render()
@@ -143,7 +143,7 @@ Blue (0-255): <A href='?src=\ref[src];h_b=-300'>\[0\]</A> <A href='?src=\ref[src
 
 obj/machinery/hologram_proj
 	name = "Hologram Projector"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "hologram0"
 	anchored = 1
 	var

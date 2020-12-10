@@ -9,7 +9,7 @@
 obj/machinery/power/solar
 	name = "solar panel"
 	desc = "A solar electrical generator."
-	icon = 'power.dmi'
+	icon = 'icons/power.dmi'
 	icon_state = "sp_base"
 	anchored = 1
 	density = 1
@@ -48,9 +48,9 @@ obj/machinery/power/solar
 	proc/updateicon()
 		src.overlays = null
 		if(stat & BROKEN)
-			overlays += image('power.dmi', "solar_panel-b", FLY_LAYER)
+			overlays += image('icons/power.dmi', "solar_panel-b", FLY_LAYER)
 		else
-			overlays += image('power.dmi', "solar_panel", FLY_LAYER)
+			overlays += image('icons/power.dmi', "solar_panel", FLY_LAYER)
 
 
 	// Calculate the fraction of power produced by the panel

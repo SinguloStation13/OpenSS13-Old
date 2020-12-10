@@ -8,7 +8,7 @@
 
 obj/machinery/recon
 	name = "1-Person Reconaissance Pod"
-	icon = 'escapepod.dmi'
+	icon = 'icons/escapepod.dmi'
 	icon_state = "recon"
 	density = 1
 	flags = FPRINT|DRIVABLE

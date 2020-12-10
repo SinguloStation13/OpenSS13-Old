@@ -8,7 +8,7 @@
 obj/machinery/light_switch
 	desc = "A light switch"
 	name = null
-	icon = 'power.dmi'
+	icon = 'icons/power.dmi'
 	icon_state = "light1"
 	anchored = 1.0
 	layer = 3.1

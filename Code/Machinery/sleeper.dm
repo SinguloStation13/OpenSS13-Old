@@ -16,7 +16,7 @@
 
 obj/machinery/sleeper
 	name = "sleeper"
-	icon = 'Cryogenic2.dmi'
+	icon = 'icons/Cryogenic2.dmi'
 	icon_state = "sleeper_0"
 	density = 1
 	anchored = 1
@@ -227,7 +227,7 @@ obj/machinery/sleeper
 
 obj/machinery/computer/sleep_console
 	name = "sleep console"
-	icon = 'Cryogenic2.dmi'
+	icon = 'icons/Cryogenic2.dmi'
 	icon_state = "sleeperconsole"
 	var
 		obj/machinery/sleeper/connected = null			// the associated sleeper
@@ -246,7 +246,7 @@ obj/machinery/computer/sleep_console
 
 	attack_paw(mob/user)
 		return src.attack_hand(user)
-	
+
 	// AI interact
 	attack_ai(mob/user)
 		return src.attack_hand(user)

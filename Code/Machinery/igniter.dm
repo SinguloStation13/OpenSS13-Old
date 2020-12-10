@@ -8,7 +8,7 @@
 obj/machinery/igniter
 
 	name = "igniter"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "igniter1"
 	anchored = 1.0
 	var

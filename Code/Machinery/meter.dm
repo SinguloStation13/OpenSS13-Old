@@ -10,7 +10,7 @@
 
 obj/machinery/meter
 	name = "meter"
-	icon = 'pipes.dmi'
+	icon = 'icons/pipes.dmi'
 	icon_state = "meterX"
 	anchored = 1
 	var
@@ -60,7 +60,7 @@ obj/machinery/meter
 				alarm = 0
 		else
 			if(pressure > PRESSURELIMIT)
-				overlays += image('pipes.dmi', "meter-o")
+				overlays += image('icons/pipes.dmi', "meter-o")
 				alarm = 1
 
 	// If the meter is clicked on, report the flow rate and temperature of the gas

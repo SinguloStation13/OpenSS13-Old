@@ -1,7 +1,7 @@
 obj/machinery/pump
 	name = "Gas Pump"
 	desc = "A gas pump"
-	icon = 'pipes.dmi'
+	icon = 'icons/pipes.dmi'
 	icon_state = "one-way"
 	anchored = 1
 	density = 0

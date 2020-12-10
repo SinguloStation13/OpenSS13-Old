@@ -33,7 +33,6 @@ AUTO_FILE_DIR: ON
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
-#include "ss13h_new.dmp"
 #include "Code\!atoms.dm"
 #include "Code\_debug.dm"
 #include "Code\aaaDefines.dm"
@@ -151,6 +150,7 @@ AUTO_FILE_DIR: ON
 #include "Code\mob\ai.dm"
 #include "Code\mob\drone.dm"
 #include "Code\Object\brokenpipe.dm"
+#include "maps\ss13h_new.dmm"
 // END_INCLUDE
 
 

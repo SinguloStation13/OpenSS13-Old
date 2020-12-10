@@ -73,17 +73,17 @@
 		if(stat & BROKEN)
 			return
 
-		overlays += image('power.dmi', "smes-op[online]")
+		overlays += image('icons/power.dmi', "smes-op[online]")
 
 		if(charging)
-			overlays += image('power.dmi', "smes-oc1")
+			overlays += image('icons/power.dmi', "smes-oc1")
 		else
 			if(chargemode)
-				overlays += image('power.dmi', "smes-oc0")
+				overlays += image('icons/power.dmi', "smes-oc0")
 
 		var/clevel = chargedisplay()
 		if(clevel>0)
-			overlays += image('power.dmi', "smes-og[clevel]")
+			overlays += image('icons/power.dmi', "smes-og[clevel]")
 
 
 	// Returns the level (0-5) of the bargraph overlay (representing the charge level) to display
@@ -192,7 +192,7 @@
 			terminal.powernet.newload += amount
 
 	// Attack to open interaction window
-	
+
 	attack_ai(mob/user)
 
 		add_fingerprint(user)
@@ -200,7 +200,7 @@
 		if(stat & BROKEN) return
 
 		interact(user)
-	
+
 	// Attack to open interaction window
 
 	attack_hand(mob/user)
@@ -257,7 +257,7 @@
 		if (usr.stat || usr.restrained() )
 			return
 		if ((!( istype(usr, /mob/human) ) && (!( ticker ) || (ticker && ticker.mode != "monkey"))))
-			if (!istype(usr, /mob/ai))		
+			if (!istype(usr, /mob/ai))
 				if (!istype(usr, /mob/drone))
 					usr.client_mob() << "\red You don't have the dexterity to do this!"
 					return
