@@ -8,7 +8,7 @@
 obj/machinery/cell_charger
 	name = "cell charger"
 	desc = "A charging unit for power cells."
-	icon = 'power.dmi'
+	icon = 'icons/power.dmi'
 	icon_state = "ccharger0"
 	anchored = 1
 	var
@@ -50,7 +50,7 @@ obj/machinery/cell_charger
 			if(chargelevel != newlevel)		// displayed charge level is cached, so as to only update the overlay when needed
 
 				overlays = null
-				overlays += image('power.dmi', "ccharger-o[newlevel]")
+				overlays += image('icons/power.dmi', "ccharger-o[newlevel]")
 
 				chargelevel = newlevel
 

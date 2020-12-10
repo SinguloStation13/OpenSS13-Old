@@ -8,7 +8,7 @@
 
 /obj/machinery/computer/engine
 	name = "engine"
-	icon = 'enginecomputer.dmi'
+	icon = 'icons/enginecomputer.dmi'
 	var
 		temp = null						// temporary text string used for interaction window
 		id = 1							// id of gas sensor to display
@@ -56,8 +56,8 @@
 	// AI interact
 	attack_ai(mob/user)
 		return src.attack_hand(user)
-		
-	
+
+
 	// Human interact
 	// Show interaction window
 

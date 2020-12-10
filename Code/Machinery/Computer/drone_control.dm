@@ -1,6 +1,6 @@
 /obj/machinery/computer/drone_control
 	name = "Drone Control Station"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "drone_control"
 	var/mob/user = null
 

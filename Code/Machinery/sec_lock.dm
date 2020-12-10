@@ -8,7 +8,7 @@
 
 obj/machinery/sec_lock
 	name = "Security Pad"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "sec_lock"
 	anchored = 1.0
 	layer = 3.1

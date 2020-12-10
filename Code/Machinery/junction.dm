@@ -5,7 +5,7 @@
 
 obj/machinery/junction
 	name = "junction"
-	icon = 'pipes.dmi'
+	icon = 'icons/pipes.dmi'
 	icon_state = "junction"
 	desc = "A junction between regular and heat-exchanger pipework."
 	anchored = 1

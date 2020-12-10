@@ -6,7 +6,7 @@
 
 obj/machinery/manifold
 	name = "manifold"
-	icon = 'pipes.dmi'
+	icon = 'icons/pipes.dmi'
 	icon_state = "manifold"
 	desc = "A three-port gas manifold."
 	anchored = 1

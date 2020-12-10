@@ -6,7 +6,7 @@
 
 obj/machinery/firealarm
 	name = "firealarm"
-	icon = 'items.dmi'
+	icon = 'icons/items.dmi'
 	icon_state = "firealarm"
 	anchored = 1
 	layer = 3.1		// slightly above standard obj layer

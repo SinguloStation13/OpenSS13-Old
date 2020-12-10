@@ -8,7 +8,7 @@
 obj/machinery/autolathe
 
 	name = "Autolathe"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "autolathe"
 	anchored = 1
 	var

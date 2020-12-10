@@ -8,7 +8,7 @@
 
 obj/machinery/computer/data
 	name = "data"
-	icon = 'weap_sat.dmi'
+	icon = 'icons/weap_sat.dmi'
 	icon_state = "computer"
 
 	var

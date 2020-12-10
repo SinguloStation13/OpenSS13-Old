@@ -1,6 +1,6 @@
 /obj/effects/water
 	flags 			= 2.0
-	icon 			= 'water.dmi'
+	icon 			= 'icons/water.dmi'
 	icon_state 		= "extinguish"
 	mouse_opacity 	= 0
 	name 			= "water"

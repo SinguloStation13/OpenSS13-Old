@@ -3,7 +3,7 @@
 		spawn(0)
 			var/t 			= src.icon_state
 			src.icon_state 	= ""
-			src.icon 		= 'b_items.dmi'
+			src.icon 		= 'icons/b_items.dmi'
 			flick("[t]", src)
 			spawn(14) del(src)
 		return 0
@@ -1429,7 +1429,7 @@
 /obj/stool/chair/e_chair/New()
 
 	src.overl = new /atom/movable/overlay( src.loc )
-	src.overl.icon = 'Icons.dmi'
+	src.overl.icon = 'icons/Icons.dmi'
 	src.overl.icon_state = "e_chairo0"
 	src.overl.layer = 5
 	src.overl.name = "electrified chair"

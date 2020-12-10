@@ -9,7 +9,7 @@
 
 obj/machinery/freezer
 	name = "freezer"
-	icon = 'Cryogenic2.dmi'
+	icon = 'icons/Cryogenic2.dmi'
 	icon_state = "freezer_0"
 	density = 1
 	p_dir = 4				// the pipe connection direction (west)
@@ -38,7 +38,7 @@ obj/machinery/freezer
 	New()
 		..()
 		var/obj/overlay/O1 = new /obj/overlay(  )
-		O1.icon = 'Cryogenic2.dmi'
+		O1.icon = 'icons/Cryogenic2.dmi'
 		O1.icon_state = "canister connector_0"
 		O1.pixel_y = -16.0
 		src.overlays += O1

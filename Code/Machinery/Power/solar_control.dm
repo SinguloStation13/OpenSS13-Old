@@ -55,7 +55,7 @@ obj/machinery/power/solar_control
 		icon_state = "solar_con"
 		overlays = null
 		if(cdir > 0)
-			overlays += image('enginecomputer.dmi', "solcon-o[cdir]", FLY_LAYER)
+			overlays += image('icons/enginecomputer.dmi', "solcon-o[cdir]", FLY_LAYER)
 
 	// Attack by AI, open interaction window
 

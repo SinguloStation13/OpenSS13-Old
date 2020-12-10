@@ -7,7 +7,7 @@
 
 /obj/machinery/connector
 	name = "connector"
-	icon = 'pipes.dmi'
+	icon = 'icons/pipes.dmi'
 	desc = "A connector for gas canisters."
 	icon_state = "connector"
 	anchored = 1

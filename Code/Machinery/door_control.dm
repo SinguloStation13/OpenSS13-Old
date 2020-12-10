@@ -6,7 +6,7 @@
 
 obj/machinery/door_control
 	name = "remote door control"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "doorctrl0"
 	desc = "A remote control switch for a door."
 	anchored = 1.0

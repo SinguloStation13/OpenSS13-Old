@@ -8,7 +8,7 @@
 
 obj/machinery/computer/airtunnel
 	name = "Air Tunnel Control"
-	icon = 'airtunnelcomputer.dmi'
+	icon = 'icons/airtunnelcomputer.dmi'
 	icon_state = "console00"
 
 
@@ -62,11 +62,11 @@ obj/machinery/computer/airtunnel
 		return src.attack_hand(user)
 
 	// AI interact
-	
+
 	attack_ai(mob/user)
 		return src.attack_hand(user)
 
-	
+
 	// Human interact
 	// Show airtunnel status and interaction window
 

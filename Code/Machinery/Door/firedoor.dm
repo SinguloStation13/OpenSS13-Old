@@ -5,7 +5,7 @@
 
 obj/machinery/door/firedoor
 	name = "firedoor"
-	icon = 'Door1.dmi'
+	icon = 'icons/Door1.dmi'
 	icon_state = "door0"
 	opacity = 0					// Firedoors start open
 	density = 0					//

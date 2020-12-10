@@ -37,7 +37,7 @@
 
 /obj/machinery/turret
 	name = "turret"
-	icon = 'weap_sat.dmi'
+	icon = 'icons/weap_sat.dmi'
 	icon_state = "grey_target_prism"
 	var/raised = 0
 	var/enabled = 1
@@ -56,7 +56,7 @@
 
 /obj/machinery/turretcover
 	name = "pop-up turret cover"
-	icon = 'weap_sat.dmi'
+	icon = 'icons/weap_sat.dmi'
 	icon_state = "turretCover"
 	anchored = 1
 	layer = 3.5
@@ -214,7 +214,7 @@
 
 /obj/machinery/turretid
 	name = "Turret deactivation control"
-	icon = 'items.dmi'
+	icon = 'icons/items.dmi'
 	icon_state = "motion3"
 	anchored = 1
 	density = 0

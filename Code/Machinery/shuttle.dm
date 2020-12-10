@@ -8,7 +8,7 @@
 
 obj/machinery/shuttle
 	name = "shuttle"
-	icon = 'shuttle.dmi'
+	icon = 'icons/shuttle.dmi'
 
 	engine
 		name = "engine"

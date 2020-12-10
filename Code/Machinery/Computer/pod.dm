@@ -12,7 +12,7 @@
 
 obj/machinery/computer/pod
 	name = "Pod Launch Control"
-	icon = 'escapepod.dmi'
+	icon = 'icons/escapepod.dmi'
 	icon_state = "computer"
 
 	var
@@ -76,13 +76,13 @@ obj/machinery/computer/pod
 
 	attack_paw(mob/user)
 		return src.attack_hand(user)
-	
+
 	// AI interact
-	
+
 	attack_ai(mob/user)
 		return src.attack_hand(user)
 
-	
+
 
 	// Human interact, show window
 
@@ -200,7 +200,7 @@ Time Left: [(minute ? "[minute]:" : null)][second] <A href='?src=\ref[src];tp=-3
 
 obj/machinery/mass_driver
 	name = "mass driver"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "mass_driver"
 	anchored = 1
 	var

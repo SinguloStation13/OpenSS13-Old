@@ -6,7 +6,7 @@
 
 obj/machinery/door
 	name = "door"
-	icon = 'doors.dmi'
+	icon = 'icons/doors.dmi'
 	icon_state = "door1"
 	opacity = 1
 	density = 1
@@ -87,16 +87,16 @@ obj/machinery/door
 		if (istype(user, /mob/drone))
 			if (user:controlledBy != null)
 				user = user:controlledBy
-				
+
 		if(istype(user, /mob/human))
 			var/mob/human/H = user
 			if(H.wear_id)
 				attackby(H.wear_id, user)
 		else if(istype(user, /mob/ai))
 			attackby(user, user)
-		
-		
-		
+
+
+
 	// Does it accept IDs?
 
 	proc/acceptsIDs()

@@ -6,7 +6,7 @@
 
 obj/machinery/valve
 	name = "valve"
-	icon = 'pipes.dmi'
+	icon = 'icons/pipes.dmi'
 	icon_state = "valve0"
 	desc = "A gas valve."
 	anchored = 1

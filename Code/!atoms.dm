@@ -369,7 +369,7 @@
 	icon_state = "ghost"
 /mob/human
 	name = "human"
-	icon = 'mob.dmi'
+	icon = 'icons/mob.dmi'
 	icon_state = "m-none"
 	gender = MALE
 	var/occupation1 = "No Preference"
@@ -421,7 +421,7 @@
 
 /mob/monkey
 	name = "monkey"
-	icon = 'monkey.dmi'
+	icon = 'icons/monkey.dmi'
 	icon_state = "monkey1"
 	gender = MALE
 	var/t_plasma = null
@@ -432,7 +432,7 @@
 
 /mob/megamonkey
 		name = "mutant monkey"
-		icon = 'monkey.dmi'
+		icon = 'icons/monkey.dmi'
 		icon_state = "megamonkey1"
 		gender = MALE
 		var/lastattacktime			// world.time that last p-attack happened - for tuning firing rate
@@ -445,7 +445,7 @@
 
 /obj/mark
 		var/mark = ""
-		icon = 'mark.dmi'
+		icon = 'icons/mark.dmi'
 		icon_state = "blank"
 		anchored = 1
 		layer = 99
@@ -453,7 +453,7 @@
 
 
 /obj/blob
-		icon = 'blob.dmi'
+		icon = 'icons/blob.dmi'
 		icon_state = "bloba0"
 		var/health = 30
 		var/attempt = 0
@@ -470,7 +470,7 @@
 	var/owner = null
 /obj/barrier
 	name = "barrier"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "barrier"
 	opacity = 1
 	density = 1
@@ -479,7 +479,7 @@
 	name = "beam"
 /obj/beam/a_laser
 	name = "a laser"
-	icon = 'weap_sat.dmi'
+	icon = 'icons/weap_sat.dmi'
 	icon_state = "laser"
 	density = 1
 	var/yo = null
@@ -493,7 +493,7 @@
 	icon_state = "spark"
 /obj/beam/i_beam
 	name = "i beam"
-	icon = 'weap_sat.dmi'
+	icon = 'icons/weap_sat.dmi'
 	icon_state = "laser"
 	var/obj/beam/i_beam/next = null
 	var/obj/item/weapon/infra/master = null
@@ -505,18 +505,18 @@
 /obj/bedsheetbin
 	name = "Linen Bin"
 	desc = "A bin for containing bedsheets."
-	icon = 'Icons.dmi'
+	icon = 'icons/Icons.dmi'
 	icon_state = "bedbin"
 	var/amount = 23.0
 	anchored = 1.0
 /obj/begin
 	name = "begin"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "begin"
 	anchored = 1.0
 /obj/bomb
 	name = "bomb"
-	icon = 'screen1.dmi'
+	icon = 'icons/screen1.dmi'
 	icon_state = "x"
 	var/btype = 0  //0 = radio, 1= prox, 2=time
 	var/explosive = 1	// 0= firebomb
@@ -525,7 +525,7 @@
 
 /obj/bullet
 	name = "bullet"
-	icon = 'weap_sat.dmi'
+	icon = 'icons/weap_sat.dmi'
 	icon_state = "bullet"
 	density = 1
 	var/yo = null
@@ -536,7 +536,7 @@
 /obj/closet
 	desc = "It's a closet!"
 	name = "Closet"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "closet"
 	density = 1
 	var/original = "closet"
@@ -623,7 +623,7 @@
 
 /obj/d_girders
 	name = "Displaced girders"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "d_girders"
 	density = 1
 	anchored = 0.0
@@ -649,7 +649,7 @@
 	flags = 2
 /obj/effects/smoke
 	name = "smoke"
-	icon = 'water.dmi'
+	icon = 'icons/water.dmi'
 	icon_state = "smoke"
 	opacity = 0
 	var/amount = 6
@@ -657,7 +657,7 @@
 	weight = 100
 /obj/effects/sparks
 	name = "sparks"
-	icon = 'water.dmi'
+	icon = 'icons/water.dmi'
 	icon_state = "sparks"
 	var/amount = 6.0
 	anchored = 0.0
@@ -682,7 +682,7 @@
 /obj/grille
 	desc = "A piece of metal with evenly spaced gridlike holes in it. Blocks large object but lets small items, gas, or energy beams through."
 	name = "grille"
-	icon = 'turfs2.dmi'
+	icon = 'icons/turfs2.dmi'
 	icon_state = "grille"
 	density = 1
 	var/health = 10.0
@@ -693,7 +693,7 @@
 /obj/securearea
 	desc = "A warning sign which reads 'SECURE AREA'"
 	name = "SECURE AREA"
-	icon = 'Icons.dmi'
+	icon = 'icons/Icons.dmi'
 	icon_state = "securearea"
 	anchored = 1.0
 	opacity = 0
@@ -720,7 +720,7 @@
 	var/w_class = 3.0
 /obj/item/weapon
 	name = "weapon"
-	icon = 'items.dmi'
+	icon = 'icons/items.dmi'
 	var/abstract = 0.0
 	var/force = null
 	var/s_istate = null
@@ -741,7 +741,7 @@
 	weight = 1.0E7
 /obj/item/weapon/ammo
 	name = "ammo"
-	icon = 'ammo.dmi'
+	icon = 'icons/ammo.dmi'
 	var/amount_left = 0.0
 	flags = 322.0
 	s_istate = "syringe_kit"
@@ -758,7 +758,7 @@
 	flags = 322.0
 /obj/item/weapon/assembly
 	name = "assembly"
-	icon = 'assemblies.dmi'
+	icon = 'icons/assemblies.dmi'
 	s_istate = "assembly"
 	w_class = 3.0
 	var/status = 0.0
@@ -858,7 +858,7 @@
 
 /obj/item/weapon/bedsheet
 	name = "bedsheet"
-	icon = 'Icons.dmi'
+	icon = 'icons/Icons.dmi'
 	icon_state = "sheet"
 	layer = 4.0
 	s_istate = "w_suit"
@@ -1291,7 +1291,7 @@ obj/item/weapon/clothing/suit/labcoat
 /obj/item/weapon/cable_coil
 	name = "cable coil"
 	var/amount = MAXCOIL
-	icon = 'power.dmi'
+	icon = 'icons/power.dmi'
 	icon_state = "coil"
 	desc = "A coil of power cable."
 	w_class = 2
@@ -1423,7 +1423,7 @@ obj/item/weapon/clothing/suit/labcoat
 	flags = 402.0
 /obj/item/weapon/flasks
 	name = "flask"
-	icon = 'Cryogenic2.dmi'
+	icon = 'icons/Cryogenic2.dmi'
 	var/oxygen = 0.0
 	var/plasma = 0.0
 	var/coolant = 0.0
@@ -1468,7 +1468,7 @@ obj/item/weapon/clothing/suit/labcoat
 	w_class = 4.0
 /obj/item/weapon/grab
 	name = "grab"
-	icon = 'screen1.dmi'
+	icon = 'icons/screen1.dmi'
 	icon_state = "grabbed"
 	var/obj/screen/grab/hud1 = null
 	var/mob/affecting = null
@@ -1647,7 +1647,7 @@ obj/item/weapon/clothing/suit/labcoat
 	s_istate = "bio_orange"
 /obj/item/weapon/organ/external
 	name = "external"
-	icon = 'human.dmi'
+	icon = 'icons/human.dmi'
 	var/d_i_state = ""
 	var/brute_dam = 0.0
 	var/burn_dam = 0.0
@@ -1861,7 +1861,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 
 /obj/item/weapon/paper_bin
 	name = "Paper Bin"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "paper_bin1"
 	var/amount = 30.0
 	s_istate = "sheet-metal"
@@ -1973,7 +1973,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 	throwspeed = 15.0
 /obj/item/weapon/shard
 	name = "shard"
-	icon = 'shards.dmi'
+	icon = 'icons/shards.dmi'
 	icon_state = "large"
 	w_class = 4.0
 	force = 7.0
@@ -2212,7 +2212,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 /obj/item/weapon/cell
 	name = "power cell"
 	desc = "A rechargable electrochemical power cell."
-	icon = 'power.dmi'
+	icon = 'icons/power.dmi'
 	icon_state = "cell"
 	s_istate = "cell"
 	flags = FPRINT|DRIVABLE|TABLEPASS
@@ -2226,7 +2226,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 
 /obj/landmark
 	name = "landmark"
-	icon = 'screen1.dmi'
+	icon = 'icons/screen1.dmi'
 	icon_state = "x2"
 	anchored = 1.0
 /obj/landmark/alterations
@@ -2234,14 +2234,14 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 
 /obj/laser
 	name = "laser"
-	icon = 'weap_sat.dmi'
+	icon = 'icons/weap_sat.dmi'
 	var/damage = 0.0
 	var/range = 10.0
 
 /obj/lattice
 	desc = "A lightweight support lattice."
 	name = "lattice"
-	icon = 'turfs2.dmi'
+	icon = 'icons/turfs2.dmi'
 	icon_state = "lattice"
 	density = 0
 	anchored = 1.0
@@ -2258,7 +2258,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 
 /obj/m_tray
 	name = "morgue tray"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "morguet"
 	density = 1
 	layer = 2.0
@@ -2273,7 +2273,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 
 /obj/machinery/computer/dna
 	name = "DNA operations computer"
-	icon = 'Cryogenic2.dmi'
+	icon = 'icons/Cryogenic2.dmi'
 	icon_state = "dna_computer"
 	var/obj/item/weapon/card/data/scan = null
 	var/obj/item/weapon/card/data/modify = null
@@ -2286,7 +2286,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 
 /obj/machinery/computer/security
 	name = "security"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "sec_computer"
 	var/obj/machinery/camera/current = null
 	var/last_pic = 1.0
@@ -2296,7 +2296,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 
 /obj/machinery/computer/teleporter
 	name = "teleporter"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "tele_computer"
 	var/locked = null
 	var/id = null
@@ -2306,7 +2306,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 
 /obj/machinery/dna_scanner
 	name = "DNA Scanner/Implanter"
-	icon = 'Cryogenic2.dmi'
+	icon = 'icons/Cryogenic2.dmi'
 	icon_state = "scanner_0"
 	density = 1
 	var/locked = 0.0
@@ -2324,7 +2324,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 
 /obj/machinery/restruct
 	name = "DNA Physical Restructurization Accelerator"
-	icon = 'Cryogenic2.dmi'
+	icon = 'icons/Cryogenic2.dmi'
 	icon_state = "restruct_0"
 	density = 1
 	var/locked = 0.0
@@ -2332,7 +2332,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 	anchored = 1.0
 /obj/machinery/scan_console
 	name = "DNA Scanner Access Console"
-	icon = 'Cryogenic2.dmi'
+	icon = 'icons/Cryogenic2.dmi'
 	icon_state = "scannerconsole"
 	density = 1
 	var/obj/item/weapon/card/data/scan = null
@@ -2355,7 +2355,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 
 /obj/machinery/teleport
 	name = "teleport"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	density = 1
 	anchored = 1.0
 /obj/machinery/teleport/hub
@@ -2367,7 +2367,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 	var/active = 0
 /obj/machinery/wire
 	name = "wire"
-	icon = 'wire.dmi'
+	icon = 'icons/wire.dmi'
 
 
 
@@ -2392,7 +2392,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 	var/netnum = 0
 	name = "power cable"
 	desc = "A flexible superconducting cable for heavy-duty power transfer."
-	icon = 'power_cond.dmi'
+	icon = 'icons/power_cond.dmi'
 	icon_state = "0-1"
 	var/d1 = 0
 	var/d2 = 1
@@ -2402,11 +2402,11 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 /obj/manifest
 
 	name = "manifest"
-	icon = 'screen1.dmi'
+	icon = 'icons/screen1.dmi'
 	icon_state = "x"
 /obj/meteor
 	name = "meteor"
-	icon = 'meteor.dmi'
+	icon = 'icons/meteor.dmi'
 	density = 1
 	var/steps = null
 	var/hits = 3.0
@@ -2416,14 +2416,14 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 	icon_state = "small"
 /obj/morgue
 	name = "morgue"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "morgue1"
 	density = 1
 	var/obj/m_tray/connected = null
 	anchored = 1.0
 /obj/move
 	name = "move"
-	icon = 'shuttle.dmi'
+	icon = 'icons/shuttle.dmi'
 	var/master = null
 	var/tx = null
 	var/ty = null
@@ -2455,7 +2455,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 	anchored = 1.0
 /obj/move/airtunnel
 	name = "airtunnel"
-	icon = 'airtunnel.dmi'
+	icon = 'icons/airtunnel.dmi'
 	icon_state = "floor"
 	var/deployed = 0.0
 	var/obj/move/airtunnel/next = null
@@ -2491,19 +2491,19 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 	name = "overlay"
 /obj/point
 	name = "point"
-	icon = 'screen1.dmi'
+	icon = 'icons/screen1.dmi'
 	icon_state = "arrow"
 	layer = 16.0
 /obj/rack
 	name = "rack"
-	icon = 'Icons.dmi'
+	icon = 'icons/Icons.dmi'
 	icon_state = "rack"
 	density = 1
 	flags = 320.0
 	anchored = 1.0
 /obj/screen
 	name = "screen"
-	icon = 'screen1.dmi'
+	icon = 'icons/screen1.dmi'
 	layer = 20.0
 	var/id = 0.0
 	var/obj/master
@@ -2515,20 +2515,20 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 	master = null
 /obj/screen/screen2
 	name = "screen2"
-	icon = 'screen.dmi'
+	icon = 'icons/screen.dmi'
 /obj/screen/storage
 	name = "storage"
 	master = null
 /obj/screen/zone_sel
 	name = "Damage Zone"
-	icon = 'zone_sel.dmi'
+	icon = 'icons/zone_sel.dmi'
 	icon_state = "blank"
 	var/selecting = "chest"
 	screen_loc = "15,15"
 /obj/secloset
 	desc = "An immobile card-locked storage closet."
 	name = "Security Locker"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "1secloset0"
 	density = 1
 	var/opened = 0.0
@@ -2570,7 +2570,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 	name = "shuttle"
 /obj/shuttle/door
 	name = "door"
-	icon = 'shuttle.dmi'
+	icon = 'icons/shuttle.dmi'
 	icon_state = "door1"
 	opacity = 1
 	density = 1
@@ -2579,18 +2579,18 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 	anchored = 1.0
 /obj/sp_start
 	name = "sp start"
-	icon = 'human.dmi'
+	icon = 'icons/human.dmi'
 	icon_state = "male"
 	var/special = null
 	anchored = 1.0
 /obj/start
 	name = "start"
-	icon = 'screen1.dmi'
+	icon = 'icons/screen1.dmi'
 	icon_state = "x"
 	anchored = 1.0
 /obj/stool
 	name = "stool"
-	icon = 'Icons.dmi'
+	icon = 'icons/Icons.dmi'
 	icon_state = "stool"
 	flags = 320.0
 	weight = 100000
@@ -2637,7 +2637,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 	maximum = -1.0
 /obj/table
 	name = "table"
-	icon = 'table.dmi'
+	icon = 'icons/table.dmi'
 	icon_state = "alone"
 	density = 1
 	anchored = 1.0
@@ -2656,21 +2656,21 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 	var/success = 1.0
 /obj/watertank
 	name = "watertank"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "watertank"
 	density = 1
 	flags = 320.0
 	weight = 5000000.0
 /obj/weldfueltank
 	name = "weldfueltank"
-	icon = 'items.dmi'
+	icon = 'icons/items.dmi'
 	icon_state = "weldtank"
 	density = 1
 	flags = 320.0
 	weight = 5000000.0
 /obj/window
 	name = "window"
-	icon = 'turfs2.dmi'
+	icon = 'icons/turfs2.dmi'
 	icon_state = "window"
 	desc = "A window."
 	density = 1
@@ -2683,7 +2683,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 	flags = 512.0
 
 /turf
-	icon = 'turfs.dmi'
+	icon = 'icons/turfs.dmi'
 	var/intact = 0.0
 	var/firelevel = null
 	var/oxygen = O2STANDARD
@@ -2753,14 +2753,14 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 	name = "command"
 /turf/station/command/floor
 	name = "floor"
-	icon = 'Icons.dmi'
+	icon = 'icons/Icons.dmi'
 	icon_state = "Floor3"
 	updatecell = 1.0
 /turf/station/command/floor/other
 	icon_state = "Floor"
 /turf/station/command/wall
 	name = "wall"
-	icon = 'wall.dmi'
+	icon = 'icons/wall.dmi'
 	icon_state = "CCWall"
 	opacity = 1
 	density = 1
@@ -2769,25 +2769,25 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 	icon_state = "r_wall"
 /turf/station/engine
 	name = "engine"
-	icon = 'engine.dmi'
+	icon = 'icons/engine.dmi'
 /turf/station/engine/floor
 	name = "floor"
 	icon_state = "floor"
 	updatecell = 1.0
 /turf/station/floor
 	name = "floor"
-	icon = 'Icons.dmi'
+	icon = 'icons/Icons.dmi'
 	icon_state = "Floor"
 	var/health = 150.0
 	var/burnt = null
 	updatecell = 1.0
 /turf/station/floor/grid
-	icon = 'weap_sat.dmi'
+	icon = 'icons/weap_sat.dmi'
 	icon_state = "grid"
 /turf/station/floor/plasma_test
 /turf/station/r_wall
 	name = "r wall"
-	icon = 'wall.dmi'
+	icon = 'icons/wall.dmi'
 	icon_state = "r_wall"
 	var/previousArea = null
 	opacity = 1
@@ -2797,7 +2797,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 	updatecell = 0.0
 /turf/station/shuttle
 	name = "shuttle"
-	icon = 'shuttle.dmi'
+	icon = 'icons/shuttle.dmi'
 /turf/station/shuttle/floor
 	name = "floor"
 	icon_state = "floor"
@@ -2810,7 +2810,8 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 	updatecell = 0.0
 /turf/station/wall
 	name = "wall"
-	icon = 'wall.dmi'
+	icon = 'icons/wall.dmi'
+	icon_state = "wall"
 	var/previousArea = null
 	opacity = 1
 	density = 1

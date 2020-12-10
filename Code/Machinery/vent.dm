@@ -7,7 +7,7 @@
 
 obj/machinery/vent
 	name = "vent"
-	icon = 'pipes.dmi'
+	icon = 'icons/pipes.dmi'
 	icon_state = "vent"
 	desc = "A gas pipe outlet vent."
 	anchored = 1
@@ -101,7 +101,7 @@ obj/machinery/emergencyrelease
 
 
 	name = "vent"
-	icon = 'pipes.dmi'
+	icon = 'icons/pipes.dmi'
 	icon_state = "vent"
 	desc = "An emergency release vent.  Releases at 133% suggested mass content."
 	anchored = 1
@@ -196,7 +196,7 @@ obj/machinery/emergencyrelease
 
 obj/machinery/regulator
 	name = "Atmospheric Control Vent"
-	icon = 'pipes.dmi'
+	icon = 'icons/pipes.dmi'
 	icon_state = "vent"
 	desc = "A gas pipe outlet vent, fitted with a regulator and filter."
 	anchored = 1

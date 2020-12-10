@@ -9,7 +9,7 @@
 
 obj/machinery/atmoalter/heater
 	name = "heater"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "heater1"
 	density = 1
 

@@ -9,7 +9,7 @@
 
 obj/brokenpipe
 	name = "a broken pipe"
-	icon = 'reg_pipe.dmi'
+	icon = 'icons/reg_pipe.dmi'
 	icon_state = "12-b"
 	anchored = 1
 
@@ -50,10 +50,10 @@ obj/brokenpipe
 
 		switch(ptype)
 			if(0)
-				icon = 'reg_pipe.dmi'
+				icon = 'icons/reg_pipe.dmi'
 				is = "[p_dir]-b"
 			if(1)
-				icon = 'heat_pipe.dmi'
+				icon = 'icons/heat_pipe.dmi'
 				is = "[p_dir]-b"
 
 

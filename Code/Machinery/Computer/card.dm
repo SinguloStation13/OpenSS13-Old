@@ -8,7 +8,7 @@
 
 obj/machinery/computer/card
 	name = "Identification Computer"
-	icon = 'stationobjs.dmi'
+	icon = 'icons/stationobjs.dmi'
 	icon_state = "id_computer"
 
 	var
@@ -33,7 +33,7 @@ obj/machinery/computer/card
 		return src.attack_hand(user)
 
 	// AI interact
-	
+
 	attack_ai(mob/user)
 		return src.attack_hand(user)
 
@@ -163,7 +163,7 @@ obj/machinery/computer/card
 				return
 
 		if ((!( istype(usr, /mob/human) ) && (!( ticker ) || (ticker && ticker.mode != "monkey"))))
-			if (!istype(usr, /mob/ai))		
+			if (!istype(usr, /mob/ai))
 				usr.client_mob() << "\red You don't have the dexterity to do this!"
 				return
 		if ((usr.stat || usr.restrained()))
@@ -207,7 +207,7 @@ obj/machinery/computer/card
 				else if (!href_list["print"])
 					if ((!( src.authenticated ) && (istype(usr, /mob/ai))) && (!src.modify))
 						usr.client_mob() << "You can't modify an ID without an ID inserted to modify. Once one is in the modify slot on the computer, you can log in."
-			
+
 			if (href_list["vo"])
 				if (src.authenticated)
 					var/t1 = text2num(href_list["vo"])

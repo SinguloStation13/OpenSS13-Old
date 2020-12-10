@@ -10,7 +10,7 @@
 obj/machinery/circulator
 	name = "circulator/heat exchanger"
 	desc = "A gas circulator pump and heat exchanger."
-	icon = 'pipes.dmi'
+	icon = 'icons/pipes.dmi'
 	icon_state = "circ1-off"
 	p_dir = 3				// pipes connect to north & south directions
 	anchored = 1.0

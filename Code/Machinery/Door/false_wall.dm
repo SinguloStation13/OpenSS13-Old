@@ -6,7 +6,7 @@
 
 obj/machinery/door/false_wall
 	name = "wall"
-	icon = 'Doorf.dmi'
+	icon = 'icons/Doorf.dmi'
 
 
 	// Create a false-wall door. Remove the pull verb as this gives away the doors position.
@@ -31,7 +31,7 @@ obj/machinery/door/false_wall
 					open()
 				else
 					close()
-		
+
 	// Monkey interact - if in monkey mode, same as human
 
 	attack_paw(mob/user)
@@ -48,7 +48,7 @@ obj/machinery/door/false_wall
 					open()
 				else
 					close()
-		
+
 		src.add_fingerprint(user)
 		if (src.density)
 			if (prob(25))

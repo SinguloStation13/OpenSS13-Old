@@ -7,7 +7,7 @@
 
 obj/machinery/door/window
 	name = "interior door"
-	icon = 'windoor.dmi'
+	icon = 'icons/windoor.dmi'
 	visible = 0.0				// Door is not opaque when closed
 	flags = WINDOW
 	opacity = 0
@@ -28,7 +28,7 @@ obj/machinery/door/window
 			T.updatecell = 1
 			T.buildlinks()
 		if ( (access && access!="0000") || allowed)
-			src.icon = 'security.dmi'
+			src.icon = 'icons/security.dmi'
 
 
 	// Override close() proc since windowdoors still update their turf when closed, unlike other doors.
@@ -57,10 +57,10 @@ obj/machinery/door/window
 		return src.attack_hand(user)
 
 	// Attack by AI same as human
-	
+
 	attack_ai(mob/user)
 		return src.attack_hand(user)
-	
+
 	// Human attack hand - cycle the door
 
 	attack_hand(mob/user)

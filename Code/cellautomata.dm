@@ -1181,15 +1181,15 @@
 		del(src)	//shut it down
 
 	plmaster = new /obj/overlay(  )
-	plmaster.icon = 'plasma.dmi'
+	plmaster.icon = 'icons/plasma.dmi'
 	plmaster.icon_state = "onturf"
 	plmaster.layer = FLY_LAYER
 	slmaster = new /obj/overlay(  )
-	slmaster.icon = 'plasma.dmi'
+	slmaster.icon = 'icons/plasma.dmi'
 	slmaster.icon_state = "sl_gas"
 	slmaster.layer = FLY_LAYER
 	liquidplmaster = new /obj/overlay(  )
-	liquidplmaster.icon = 'plasma.dmi'
+	liquidplmaster.icon = 'icons/plasma.dmi'
 	liquidplmaster.icon_state = "liquid"
 	liquidplmaster.layer = FLY_LAYER
 	cellcontrol = new /datum/control/cellular(  )

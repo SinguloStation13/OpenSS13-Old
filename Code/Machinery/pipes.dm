@@ -11,7 +11,7 @@
 
 obj/machinery/pipes
 	name = "pipes"
-	icon = 'reg_pipe.dmi'
+	icon = 'icons/reg_pipe.dmi'
 	icon_state = "12"
 	anchored = 1
 	desc = "A regular pipe."
@@ -221,11 +221,11 @@ obj/machinery/pipes
 
 		if(!node1)														// node1 is not connected
 			if(!findbrokenpipe(T, dirs[1], level, 0))					// no broken pipe present
-				overlays += image('pipes.dmi', "discon[dirs[1]]", FLY_LAYER)
+				overlays += image('icons/pipes.dmi', "discon[dirs[1]]", FLY_LAYER)
 
 		if(!node2)														// node2 is not connected
 			if(!findbrokenpipe(T, dirs[2], level, 0))					// no broken pipe present
-				overlays += image('pipes.dmi', "discon[dirs[2]]", FLY_LAYER)
+				overlays += image('icons/pipes.dmi', "discon[dirs[2]]", FLY_LAYER)
 
 
 		return
@@ -528,7 +528,7 @@ obj/machinery/pipes
 	 */
 
 	heat_exch
-		icon = 'heat_pipe.dmi'
+		icon = 'icons/heat_pipe.dmi'
 		name = "heat exchange pipe"
 		desc = "A bundle of small pipes designed for maximum heat transfer."
 		insulation = HEATPIPERATE
@@ -558,11 +558,11 @@ obj/machinery/pipes
 
 			if(!node1)														// node1 is not connected
 				if(!findbrokenpipe(T, dirs[1], level, 1))					// no broken pipe present
-					overlays += image('pipes.dmi', "discon-he[dirs[1]]", FLY_LAYER)
+					overlays += image('icons/pipes.dmi', "discon-he[dirs[1]]", FLY_LAYER)
 
 			if(!node2)														// node2 is not connected
 				if(!findbrokenpipe(T, dirs[2], level, 1))					// no broken pipe present
-					overlays += image('pipes.dmi', "discon-he[dirs[2]]", FLY_LAYER)
+					overlays += image('icons/pipes.dmi', "discon-he[dirs[2]]", FLY_LAYER)
 
 
 		// Return list of directions corresponding to h_dir bitflags
@@ -623,7 +623,7 @@ obj/machinery/pipes
 	flexipipe
 		desc = "Flexible hose-like piping."
 		name = "flexipipe"
-		icon = 'wire.dmi'
+		icon = 'icons/wire.dmi'
 		capacity = 10.0
 		p_dir = 12.0
 
@@ -633,7 +633,7 @@ obj/machinery/pipes
 	high_capacity
 		desc = "A large bore pipe with high capacity."
 		name = "high capacity"
-		icon = 'hi_pipe.dmi'
+		icon = 'icons/hi_pipe.dmi'
 		density = 1
 		capacity = 1.8E7
 

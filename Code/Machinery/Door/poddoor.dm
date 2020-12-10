@@ -6,7 +6,7 @@
 
 obj/machinery/door/poddoor
 	name = "poddoor"
-	icon = 'Door1.dmi'
+	icon = 'icons/Door1.dmi'
 	icon_state = "pdoor1"
 	var
 		id = 1.0			// ID that must match that of the controlling device

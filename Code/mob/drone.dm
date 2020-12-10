@@ -8,8 +8,8 @@
 	Take-off dialog for taking things off others should work, except humans controlling a drone should have a high chance of failure and harming the person instead.
 	should lose drone control upon going unconscious (it's already lost upon death), and also if the user is pulled/moves away from the control station
 	re-test: can drone push canisters now?
-	
-	
+
+
 	test: hit monkey as drone, as person
 	test: hit drone as monkey
 	more testing: drone vs drone fight, and another human vs drone fight.
@@ -32,7 +32,7 @@
 
 /mob/drone
 	name = "Drone"
-	icon = 'drone.dmi'
+	icon = 'icons/drone.dmi'
 	icon_state = "generic"
 	gender = MALE
 	flags = 320.0	//64: fireable by mass driver, 256: fprint
@@ -148,8 +148,8 @@
 		src.wirecuttersIcon.overlays += src.wirecutters
 		src.crowbarIcon.overlays += src.crowbar
 		src.screwdriverIcon.overlays += src.screwdriver
-		src.welderLit = image('items.dmi', icon_state="welder1")
-		src.welderUnlit = image('items.dmi', icon_state="welder")
+		src.welderLit = image('icons/items.dmi', icon_state="welder1")
+		src.welderUnlit = image('icons/items.dmi', icon_state="welder")
 		if (src.welder:welding)
 			src.welderIcon.overlays += src.welderLit
 		else
@@ -421,9 +421,9 @@
 					src.savedDroneIcons += user.client.screen
 					var/screenFile
 					if (user.hud_used == main_hud)
-						screenFile = 'screen1.dmi'
+						screenFile = 'icons/screen1.dmi'
 					else
-						screenFile = 'screen.dmi'
+						screenFile = 'icons/screen.dmi'
 					for (var/atom/item in src.screenIcons)
 						item.icon = screenFile
 					user.client.screen -= user.client.screen
@@ -478,11 +478,11 @@
 		if (user.hud_used == main_hud)
 			user.favorite_hud = 1
 			user.hud_used = main_hud2
-			file = 'screen.dmi'
+			file = 'icons/screen.dmi'
 		else
 			user.favorite_hud = 0
 			user.hud_used = main_hud
-			file = 'screen1.dmi'
+			file = 'icons/screen1.dmi'
 		var/client/client = src.alwaysClient()
 		for (var/obj/screenIcon in src.screenIcons)
 			client.screen -= screenIcon
@@ -751,7 +751,7 @@
 
 /obj/item/weapon/drone/aiInterface
 	name = "AI Interface"
-	icon = 'drone.dmi'
+	icon = 'icons/drone.dmi'
 	icon_state = "tool-aiInterface"
 	flags = 322.0
 
@@ -759,7 +759,7 @@
 
 /obj/item/weapon/drone/grippers
 	name = "Grippers"
-	icon = 'drone.dmi'
+	icon = 'icons/drone.dmi'
 	icon_state = "tool-grippers"
 	flags = 322.0
 

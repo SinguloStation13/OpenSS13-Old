@@ -7,7 +7,7 @@
 obj/machinery/dispenser
 	desc = "A simple yet bulky one-way storage device for gas tanks. Holds 10 plasma and 10 oxygen tanks."
 	name = "Tank Storage Unit"
-	icon = 'turfs2.dmi'
+	icon = 'icons/turfs2.dmi'
 	icon_state = "dispenser"
 	density = 1
 	anchored = 1
