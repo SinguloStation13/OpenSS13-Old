@@ -2811,6 +2811,7 @@ Total SMES charging rate should not exceed total power generation rate, or an ov
 /turf/station/wall
 	name = "wall"
 	icon = 'icons/wall.dmi'
+	icon_state = "wall"
 	var/previousArea = null
 	opacity = 1
 	density = 1
