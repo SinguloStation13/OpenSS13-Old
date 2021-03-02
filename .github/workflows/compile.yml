@@ -9,38 +9,38 @@ on:
     branches: master
 
 jobs:
-  lint:
-    name: SpacemanDMM
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Cache SpacemanDMM
-        uses: actions/cache@v1
-        with:
-          path: ~/SpacemanDMM
-          key: ${{ runner.os }}-dreamchecker-${{ hashFiles('dependencies.sh')}}
-          restore-keys: ${{ runner.os }}-dreamchecker
-
-      - name: Setup Python
-        uses: actions/setup-python@v1.2.0
-
-      - name: Setup Rust
-        uses: hecrj/setup-rust-action@v1.3.2
-
-      - name: Install Dependencies
-        run: |
-          tools/ci/install_spaceman_dmm.sh dreamchecker
-
-      - name: Run Linter
-        id: linter
-        run: ~/dreamchecker > ${GITHUB_WORKSPACE}/output-annotations.txt 2>&1
-
-      - name: Annotate Linter
-        uses: Yogstation13/DreamAnnotate@v1
-        if: always()
-        with:
-          outputFile: output-annotations.txt
+#  lint:
+#   name: SpacemanDMM
+#    runs-on: ubuntu-18.04
+#    steps:
+#      - uses: actions/checkout@v2
+#
+#      - name: Cache SpacemanDMM
+#        uses: actions/cache@v1
+#       with:
+#         path: ~/SpacemanDMM
+#         key: ${{ runner.os }}-dreamchecker-${{ hashFiles('dependencies.sh')}}
+#          restore-keys: ${{ runner.os }}-dreamchecker
+#
+#     - name: Setup Python
+#        uses: actions/setup-python@v1.2.0
+#
+#      - name: Setup Rust
+#        uses: hecrj/setup-rust-action@v1.3.2
+#
+#      - name: Install Dependencies
+#        run: |
+#          tools/ci/install_spaceman_dmm.sh dreamchecker
+#
+#      - name: Run Linter
+#        id: linter
+#        run: ~/dreamchecker > ${GITHUB_WORKSPACE}/output-annotations.txt 2>&1
+#
+#      - name: Annotate Linter
+#        uses: Yogstation13/DreamAnnotate@v1
+#        if: always()
+#        with:
+#          outputFile: output-annotations.txt
 
   compile:
     name: Compile
