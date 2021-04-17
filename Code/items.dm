@@ -2819,6 +2819,7 @@
 		usr.client_mob() << browse(text("<HTML><HEAD><TITLE>[]</TITLE></HEAD><BODY><TT>[]</TT></BODY></HTML>", src.name, src.info), text("window=[]", src.name))
 	return
 
+/* temp removes map functionality because the .png is gone
 /obj/item/weapon/paper/Map/examine()
 	set src in view()
 
@@ -2830,7 +2831,7 @@
 	else
 		usr.client_mob() << browse(text("<HTML><HEAD><TITLE>[]</TITLE></HEAD><BODY><TT>[]</TT></BODY></HTML>", src.name, src.info), text("window=[]", src.name))
 	return
-
+*/
 
 /obj/item/weapon/f_card/examine()
 	set src in view(2)

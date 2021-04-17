@@ -8,7 +8,7 @@
 obj/machinery/power/solar_control
 	name = "solar panel control"
 	desc = "A controller for solar panel arrays."
-	icon = 'enginecomputer.dmi'
+	icon = 'icons/enginecomputer.dmi'
 	icon_state = "solar_con"
 	anchored = 1
 	density = 1
