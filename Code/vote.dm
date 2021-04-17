@@ -173,7 +173,7 @@
 	usr.client.showvote = 1
 
 
-	var/text = "<HTML><HEAD><TITLE>Voting</TITLE></HEAD><BODY scroll=no>"
+	var/text = "<HTML><HEAD><TITLE>Voting</TITLE></HEAD><BODY scroll=no>" // Adds the "Voting" title to an HTML page.
 
 	var/footer = "<HR><A href='?src=\ref[vote];voter=\ref[src];vclose=1'>Close</A></BODY></HTML>"
 
