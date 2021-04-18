@@ -906,7 +906,7 @@
 		O.verbs += /mob/proc/restart
 		O.verbs += /mob/proc/who
 		O.verbs += /mob/proc/change_name
-		O.verbs += /mob/proc/show_help
+	//	O.verbs += /mob/proc/show_help
 		O.verbs += /mob/proc/toggle_ooc
 		O.verbs += /mob/proc/toggle_abandon
 		O.verbs += /mob/proc/toggle_enter

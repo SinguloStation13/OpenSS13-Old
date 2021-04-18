@@ -3047,7 +3047,7 @@
 		src.verbs += /mob/proc/restart
 		src.verbs += /mob/proc/who
 		src.verbs += /mob/proc/change_name
-		src.verbs += /mob/proc/show_help
+	//	src.verbs += /mob/proc/show_help
 		src.verbs += /mob/proc/toggle_ooc
 		src.verbs += /mob/proc/toggle_abandon
 		src.verbs += /mob/proc/toggle_enter
@@ -4763,8 +4763,8 @@
 				src.gender = "female"
 			else
 				src.gender = "male"
-			src.stand_icon = new /icon( 'human.dmi', text("[]", src.gender) )
-			src.lying_icon = new /icon( 'human.dmi', text("[]-d", src.gender) )
+			src.stand_icon = new /icon( 'icons/human.dmi', text("[]", src.gender) )
+			src.lying_icon = new /icon( 'icons/human.dmi', text("[]-d", src.gender) )
 		else if (findtextEx(href, "n_gl", 1, null))
 			src.need_gl = !( src.need_gl )
 		else if (findtextEx(href, "b_ep", 1, null))
@@ -5166,13 +5166,13 @@
 	if(config.logadmin) world.log << text("ADMIN: [] set player []/[]'s name to [].", src.key,M,M.key,t)
 	M.rname = t
 	return
-
+/* There is no help, suffer
 /mob/proc/show_help(mob/M as mob in world)
 	set category = "Admin"
 
 	M << browse('help.htm', "window=help")
 	return
-
+*/
 /mob/proc/changemessage(txt as text)
 	set category = "Admin"
 
@@ -5441,7 +5441,7 @@
 
 /mob/verb/help()
 
-	src << browse('help.htm', "window=help")
+//	src << browse('help.htm', "window=help")
 	return
 
 /mob/verb/abandon_mob()
@@ -5613,7 +5613,7 @@
 		src.verbs += /mob/proc/restart
 		src.verbs += /mob/proc/who
 		src.verbs += /mob/proc/change_name
-		src.verbs += /mob/proc/show_help
+//		src.verbs += /mob/proc/show_help
 		src.verbs += /mob/proc/toggle_ooc
 		src.verbs += /mob/proc/toggle_abandon
 		src.verbs += /mob/proc/toggle_enter
