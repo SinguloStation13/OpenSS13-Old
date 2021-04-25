@@ -1,0 +1,8 @@
+code:
+    - any: ['src/**/*.dm']
+sprites:
+    - any: ['src/**/*.dmi']
+mapping:
+    - any: ['src/**/*.dmm']
+config:
+    - config/*
